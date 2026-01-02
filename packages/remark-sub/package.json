@@ -1,0 +1,53 @@
+{
+  "name": "remark-sub",
+  "version": "1.0.0",
+  "description": "Remark plugin for inline substitution syntax (:sub[...]{...})",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "mdast-util-sub": "^1.0.0",
+    "micromark-extension-sub": "^1.0.0"
+  },
+  "peerDependencies": {
+    "unified": ">=11"
+  },
+  "devDependencies": {
+    "@types/mdast": "^4.0.0",
+    "remark-directive": "^4.0.0",
+    "remark-gfm": "^4.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-stringify": "^11.0.0",
+    "typescript": "^5.7.0",
+    "unified": "^11.0.0",
+    "vitest": "^4.0.16"
+  },
+  "keywords": [
+    "remark",
+    "unified",
+    "substitution",
+    "inline",
+    "toggle"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weavepage/remark-sub.git",
+    "directory": "packages/remark-sub"
+  }
+}

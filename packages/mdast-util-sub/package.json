@@ -1,0 +1,37 @@
+{
+  "name": "mdast-util-sub",
+  "version": "1.0.0",
+  "description": "mdast utility to parse and serialize inline substitution (:sub[...]{...})",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo 'Tests run via remark-sub package'",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "mdast-util-from-markdown": "^2.0.0",
+    "mdast-util-to-markdown": "^2.0.0",
+    "micromark-extension-sub": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/mdast": "^4.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^4.0.16"
+  },
+  "keywords": ["mdast", "substitution", "inline", "toggle"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weavepage/remark-sub.git",
+    "directory": "packages/mdast-util-sub"
+  }
+}

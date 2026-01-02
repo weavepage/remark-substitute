@@ -1,0 +1,37 @@
+{
+  "name": "micromark-extension-sub",
+  "version": "1.0.0",
+  "description": "Micromark extension for inline substitution syntax (:sub[...]{...})",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "micromark-util-symbol": "^2.0.0",
+    "micromark-util-types": "^2.0.0"
+  },
+  "devDependencies": {
+    "micromark": "^4.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^4.0.16"
+  },
+  "keywords": ["micromark", "substitution", "inline", "toggle"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weavepage/remark-sub.git",
+    "directory": "packages/micromark-extension-sub"
+  }
+}
